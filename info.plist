@@ -8,11 +8,26 @@
 	<string>Internet</string>
 	<key>connections</key>
 	<dict>
+		<key>24A4E444-6766-4DE0-A40A-5DED417CC489</key>
+		<array/>
+		<key>31A191C1-C6EE-45FA-88F0-6837076CD152</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>03D724A6-DF3A-4F2A-9CEF-4E0CE88FA82F</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>41560B56-3079-47AA-B401-12686781CC88</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>147537BF-9301-45CD-BCCB-AE0081E410E9</string>
+				<string>24A4E444-6766-4DE0-A40A-5DED417CC489</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -35,6 +50,25 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>{query}</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>03D724A6-DF3A-4F2A-9CEF-4E0CE88FA82F</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>alfredfiltersresults</key>
 				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
@@ -48,7 +82,7 @@
 				<key>escaping</key>
 				<integer>100</integer>
 				<key>keyword</key>
-				<string>chessu</string>
+				<string>csu</string>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
@@ -84,21 +118,19 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>lastpathcomponent</key>
-				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<false/>
-				<key>removeextension</key>
-				<false/>
-				<key>text</key>
-				<string>what is {query}</string>
-				<key>title</key>
-				<string>This is the text</string>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>{query}</string>
+				<key>utf8</key>
+				<true/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
+			<string>alfred.workflow.action.openurl</string>
 			<key>uid</key>
-			<string>147537BF-9301-45CD-BCCB-AE0081E410E9</string>
+			<string>24A4E444-6766-4DE0-A40A-5DED417CC489</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -118,17 +150,17 @@
 				<key>escaping</key>
 				<integer>100</integer>
 				<key>keyword</key>
-				<string>chessg</string>
+				<string>csg</string>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
 				<true/>
 				<key>queuedelaymode</key>
-				<integer>1</integer>
+				<integer>0</integer>
 				<key>queuemode</key>
 				<integer>1</integer>
 				<key>runningsubtext</key>
-				<string>Fetching games from chess.com for {{query}}</string>
+				<string>Fetching games from chess.com for {query}</string>
 				<key>script</key>
 				<string>python chess_games.py {query}</string>
 				<key>scriptargtype</key>
@@ -156,26 +188,33 @@
 	<string></string>
 	<key>uidata</key>
 	<dict>
-		<key>147537BF-9301-45CD-BCCB-AE0081E410E9</key>
+		<key>03D724A6-DF3A-4F2A-9CEF-4E0CE88FA82F</key>
 		<dict>
 			<key>xpos</key>
-			<integer>590</integer>
+			<integer>395</integer>
 			<key>ypos</key>
-			<integer>225</integer>
+			<integer>75</integer>
+		</dict>
+		<key>24A4E444-6766-4DE0-A40A-5DED417CC489</key>
+		<dict>
+			<key>xpos</key>
+			<integer>395</integer>
+			<key>ypos</key>
+			<integer>265</integer>
 		</dict>
 		<key>31A191C1-C6EE-45FA-88F0-6837076CD152</key>
 		<dict>
 			<key>xpos</key>
-			<integer>200</integer>
+			<integer>85</integer>
 			<key>ypos</key>
-			<integer>70</integer>
+			<integer>75</integer>
 		</dict>
 		<key>41560B56-3079-47AA-B401-12686781CC88</key>
 		<dict>
 			<key>xpos</key>
-			<integer>80</integer>
+			<integer>95</integer>
 			<key>ypos</key>
-			<integer>280</integer>
+			<integer>265</integer>
 		</dict>
 	</dict>
 	<key>version</key>
