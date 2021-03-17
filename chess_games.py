@@ -28,7 +28,6 @@ def main(_):
 
         user = wf.args[0] if len(wf.args) == 1 else user
 
-        log.debug(user)
         r = web.get('https://api.chess.com/pub/player/%s/games' % user)
 
         if r.status_code == 200:
